@@ -23,3 +23,5 @@ C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\P
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pet.csproj.CopyComplete
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pet.exe
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pet.pdb
+C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\ViewProductPage.g.cs
+C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\ViewProductPage.baml

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\App.xaml
-2563972398
+4-262786475
 2-747231112
-25699802251
+271651394092
 18-1495200499
-MainWindow.xaml;Pages\LoginPage.xaml;
+MainWindow.xaml;Pages\AdminLkPage.xaml;Pages\LoginPage.xaml;Pages\ViewProductPage.xaml;
 
-False
+True
 
