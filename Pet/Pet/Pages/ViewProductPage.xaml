@@ -93,9 +93,6 @@
                                    Text="{Binding ProductQuantityInStock, 
                             StringFormat={}Наличие на складе: {0}}"></TextBlock>
 
-                        <Button x:Name="DeleteButton" Content="Удалить"
-                                  Click="DeleteButton_Click" Grid.Column="3"
-                                    Background="#FF498C51"></Button>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

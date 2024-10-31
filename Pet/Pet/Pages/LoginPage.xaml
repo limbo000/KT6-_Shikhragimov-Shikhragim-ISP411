@@ -22,6 +22,8 @@
                          VerticalContentAlignment="Center"></PasswordBox>
             <Button x:Name="LoginButton" Content="Войти"
                     Margin="10" Click="LoginButton_Click"></Button>
+            <Button x:Name="GuestButton" Content="Гость"
+                    Margin="10" Click="GuestButton_Click"></Button>
         </StackPanel>
     </Grid>
 </Page>
