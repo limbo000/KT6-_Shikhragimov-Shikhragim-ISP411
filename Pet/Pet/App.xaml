@@ -16,14 +16,14 @@
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="Width" Value="300"></Setter>
+            <Setter Property="Width" Value="250"></Setter>
             <Setter Property="Height" Value="30"></Setter>
         </Style>
         <Style TargetType="PasswordBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="Width" Value="300"></Setter>
+            <Setter Property="Width" Value="250"></Setter>
             <Setter Property="Height" Value="30"></Setter>
         </Style>
         <Style TargetType="Button">
@@ -33,6 +33,12 @@
             <Setter Property="Width" Value="150"></Setter>
             <Setter Property="Height" Value="30"></Setter>
             <Setter Property="Background" Value="#FF498C51"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
         </Style>
     </Application.Resources>
 </Application>

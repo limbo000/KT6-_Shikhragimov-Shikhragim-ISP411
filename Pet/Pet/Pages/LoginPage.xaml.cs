@@ -41,6 +41,7 @@ namespace Pet.Pages
                 if (errors.Length > 0)
                 {
                     MessageBox.Show(errors.ToString(), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
                 if (Data.PetShopEntities.GetContext().User.Any(d => d.UserLogin == LoginTextBox.Text && d.UserPassword == PasswordBox.Password))
                 {
@@ -58,16 +59,17 @@ namespace Pet.Pages
                             Classes.Manager.MainFrame.Navigate(new Pages.ViewProductPage());
                             break;
                     }
-                    MessageBox.Show("Успех!", "Успешно!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Успех!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
                     MessageBox.Show("Некорректный логин/пароль!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (Exception)
+
+            catch (Exception ex)
             {
-                MessageBox.Show(ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

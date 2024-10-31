@@ -23,6 +23,37 @@ namespace Pet.Pages
         public ViewProductPage()
         {
             InitializeComponent();
+            ProductListView.ItemsSource = Data.PetShopEntities.GetContext().Product.ToList();
+        }
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void SortUpRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SortDownRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ManufacturerComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
