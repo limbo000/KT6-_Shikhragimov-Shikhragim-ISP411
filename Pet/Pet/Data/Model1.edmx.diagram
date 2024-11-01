@@ -4,21 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f8154817f3d14b43af19356a784d3cee" Name="Diagram1">
-        <EntityTypeShape EntityType="PetShopModel.Adress" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Category" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.City" Width="1.5" PointX="1.5" PointY="22.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Indexes" Width="1.5" PointX="1.5" PointY="24.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Manufacturer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Order" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.OrderProduct" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+      <Diagram DiagramId="0169a7092d5f4358bcc534d14a92bb71" Name="Diagram1">
+        <EntityTypeShape EntityType="PetShopModel.Adress" Width="1.5" PointX="0.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Category" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.City" Width="1.5" PointX="1.5" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Indexes" Width="1.5" PointX="1.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Manufacturer" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Order" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.OrderProduct" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.ProductName" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Role" Width="1.5" PointX="1.5" PointY="33" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Status" Width="1.5" PointX="0.75" PointY="19.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Street" Width="1.5" PointX="1.5" PointY="26.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.Supplier" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopModel.User" Width="1.5" PointX="0.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.ProductName" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Role" Width="1.5" PointX="1.5" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Status" Width="1.5" PointX="0.75" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Street" Width="1.5" PointX="1.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Supplier" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.Unit" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopModel.User" Width="1.5" PointX="0.75" PointY="31.625" IsExpanded="true" />
         <AssociationConnector Association="PetShopModel.FK_Adress_City1" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopModel.FK_Adress_Indexes1" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopModel.FK_Adress_Street" ManuallyRouted="false" />
@@ -31,6 +32,7 @@
         <AssociationConnector Association="PetShopModel.FK_OrderProduct_Product" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopModel.FK_Product_ProductName1" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopModel.FK_Product_Supplier1" ManuallyRouted="false" />
+        <AssociationConnector Association="PetShopModel.FK_Product_Unit" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopModel.FK_User_Role" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

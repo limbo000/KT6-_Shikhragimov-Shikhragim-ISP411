@@ -79,6 +79,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ProductArticleNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Unit" Type="Int32" />
     <Property Name="IdName" Type="Int32" Nullable="false" />
     <Property Name="ProductCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <Property Name="IdManufacturer" Type="Int32" Nullable="false" />
@@ -94,6 +95,7 @@
     <NavigationProperty Name="OrderProduct" Relationship="Self.FK_OrderProduct_Product" FromRole="Product" ToRole="OrderProduct" />
     <NavigationProperty Name="ProductName1" Relationship="Self.FK_Product_ProductName1" FromRole="Product" ToRole="ProductName" />
     <NavigationProperty Name="Supplier" Relationship="Self.FK_Product_Supplier1" FromRole="Product" ToRole="Supplier" />
+    <NavigationProperty Name="Unit1" Relationship="Self.FK_Product_Unit" FromRole="Product" ToRole="Unit" />
   </EntityType>
   <EntityType Name="ProductName">
     <Key>
@@ -134,6 +136,14 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Product" Relationship="Self.FK_Product_Supplier1" FromRole="Supplier" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Unit" FromRole="Unit" ToRole="Product" />
   </EntityType>
   <EntityType Name="User">
     <Key>
@@ -293,6 +303,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Product_Unit">
+    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Unit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_User_Role">
     <End Role="Role" Type="Self.Role" Multiplicity="1" />
     <End Role="User" Type="Self.User" Multiplicity="*" />
@@ -319,6 +341,7 @@
     <EntitySet Name="Status" EntityType="Self.Status" />
     <EntitySet Name="Street" EntityType="Self.Street" />
     <EntitySet Name="Supplier" EntityType="Self.Supplier" />
+    <EntitySet Name="Unit" EntityType="Self.Unit" />
     <EntitySet Name="User" EntityType="Self.User" />
     <AssociationSet Name="FK_Adress_City1" Association="Self.FK_Adress_City1">
       <End Role="City" EntitySet="City" />
@@ -366,6 +389,10 @@
     </AssociationSet>
     <AssociationSet Name="FK_Product_Supplier1" Association="Self.FK_Product_Supplier1">
       <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Unit" Association="Self.FK_Product_Unit">
+      <End Role="Unit" EntitySet="Unit" />
       <End Role="Product" EntitySet="Product" />
     </AssociationSet>
     <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">

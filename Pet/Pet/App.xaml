@@ -36,9 +36,15 @@
         </Style>
         <Style TargetType="ComboBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="Width" Value="250"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
         </Style>
         <Style TargetType="RadioButton">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="250"></Setter>
+            <Setter Property="Height" Value="50"></Setter>
         </Style>
     </Application.Resources>
 </Application>

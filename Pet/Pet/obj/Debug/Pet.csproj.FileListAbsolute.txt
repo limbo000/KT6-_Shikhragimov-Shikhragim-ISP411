@@ -27,3 +27,5 @@ C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\P
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\ViewProductPage.baml
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\AdminLkPage.g.cs
 C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\AdminLkPage.baml
+C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\comcuru\Desktop\KT6-_Shikhragimov-Shikhragim-ISP411\Pet\Pet\obj\Debug\Pages\AddEditPage.baml

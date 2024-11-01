@@ -22,6 +22,7 @@ namespace Pet.Data
     
         public int Id { get; set; }
         public string ProductArticleNumber { get; set; }
+        public Nullable<int> Unit { get; set; }
         public int IdName { get; set; }
         public decimal ProductCost { get; set; }
         public int IdManufacturer { get; set; }
@@ -39,5 +40,6 @@ namespace Pet.Data
         public virtual ICollection<OrderProduct> OrderProduct { get; set; }
         public virtual ProductName ProductName1 { get; set; }
         public virtual Supplier Supplier { get; set; }
+        public virtual Unit Unit1 { get; set; }
     }
 }

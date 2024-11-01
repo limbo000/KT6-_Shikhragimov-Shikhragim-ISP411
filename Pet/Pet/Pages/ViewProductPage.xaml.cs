@@ -111,15 +111,7 @@ namespace Pet.Pages
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Classes.Manager.MainFrame.CanGoBack)
-            {
-                if (Classes.Manager.CurrentUser != null)
-                {
-                    Classes.Manager.CurrentUser = null;
-                }
-
-                Classes.Manager.MainFrame.GoBack();
-            }
+            Classes.Manager.MainFrame.Navigate(new Pages.LoginPage());
         }
 
         private void ManufacturerComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

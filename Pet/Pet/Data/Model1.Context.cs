@@ -47,6 +47,7 @@ namespace Pet.Data
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<Street> Street { get; set; }
         public virtual DbSet<Supplier> Supplier { get; set; }
+        public virtual DbSet<Unit> Unit { get; set; }
         public virtual DbSet<User> User { get; set; }
     }
 }

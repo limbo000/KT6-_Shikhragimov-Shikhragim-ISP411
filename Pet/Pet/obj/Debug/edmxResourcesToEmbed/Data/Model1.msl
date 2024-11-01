@@ -72,6 +72,7 @@
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
           <ScalarProperty Name="IdName" ColumnName="IdName" />
           <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
           <ScalarProperty Name="IdManufacturer" ColumnName="IdManufacturer" />
@@ -122,6 +123,14 @@
         <MappingFragment StoreEntitySet="Supplier">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unit">
+      <EntityTypeMapping TypeName="PetShopModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

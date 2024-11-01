@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Pet.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="650" d:DesignWidth="1000"
-      Title="ИС Товары для животных"
+      Title="ИС Товары для животных - Просмотр товаров"
       Background="White">
 
     <Grid>
